@@ -15,6 +15,5 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         final List<String> names = Arrays.asList("Tim", "Andi", "Michael");
-        final Mapper <String, Integer> intMapper = String::length;
     }
 }
