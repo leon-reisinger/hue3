@@ -1,19 +1,30 @@
 package net.htlgrieskirchen.pos3.streams;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Streams {
 
     public double average(int[] numbers) {
-        return 0;
-        //implement this
+        int count = 0;
+        int inhalt = 0;
+        for(int i = 0; i < numbers.length; i++)
+        {
+            inhalt = numbers[i];
+            count++;
+        }
+        int erg = inhalt / count;
+        return erg;
     }
     
     public List<String> upperCase(String[] strings) {
-        return null;
-        //implement this
+        List<String> allUpperCaseStrings = new ArrayList<>();
+        for(int i = 0; i < strings.length; i++)
+        {
+            String tmps = strings[i].toUpperCase();
+            allUpperCaseStrings.add(tmps);
+        }
+        return allUpperCaseStrings;
     }
     
     public Weapon findWeaponWithLowestDamage(List<Weapon> weapons) {
