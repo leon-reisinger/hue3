@@ -39,9 +39,6 @@ public class Weapon {
     }
 
 
-
-
-
     public String getName() {
         return this.name;
     }
@@ -87,19 +84,6 @@ public class Weapon {
         return hash;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if(obj.equals(obj))
-        {
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public String toString() {
-        return "Weapon" + "name=" + name + ", combatType=" + combatType + ", damageType=" + damageType + ", damage=" + damage + ", speed=" + speed + ", minStrength=" + minStrength + ", value=" + value + '}';
-    }
     
     public void readFile(String line)
     {
